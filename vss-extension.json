@@ -1,0 +1,144 @@
+{
+   "manifestVersion": 1,
+   "id": "QueueWorkItems",
+   "publisher": "QueueWorkItems",
+   "version": "1.0.11",
+   "name": "Queue Workitems Button",
+   "scopes": [
+      "vso.work",
+      "vso.work_write",
+      "vso.identity",
+      "vso.graph",
+      "vso.project",
+      "vso.security_manage"
+   ],
+   "description": "Queue Workitems",
+   "icons": {
+      "default": "images/icon-96.png"
+   },
+   "targets": [
+      {
+         "id": "Microsoft.VisualStudio.Services"
+      }
+   ],
+   "tags": [
+      "Work Item",
+      "Work Item control",
+      "Usability",
+      "Button",
+      "Aggrigator",
+      "Action",
+      "R2P"
+   ],
+   "content": {
+      "details": {
+         "path": "CONTENT.md"
+      },
+      "license": {
+         "path": "CONTENT.md"
+      },
+      "privacy": {
+         "path": "CONTENT.md"
+      }
+   },
+   "repository": {
+      "type": "git",
+      "uri": "https://dev.azure.com/young-it/resources-management-automation/_git/devops-extension-queue-workitem"
+   },
+   "files": [
+      {
+         "path": "images",
+         "addressable": true
+      },
+      {
+         "path": "scripts",
+         "addressable": true
+      },
+      {
+         "path": "styles",
+         "addressable": true
+      },
+      {
+         "path": "index.html",
+         "addressable": true
+      },
+      {
+         "path": "build",
+         "addressable": true
+      },
+      {
+         "path": "node_modules/vss-web-extension-sdk/lib",
+         "addressable": true,
+         "packagePath": "lib"
+      }
+   ],
+   "categories": [
+      "Azure Boards"
+   ],
+   "contributions": [
+      {
+         "id": "QueueWorkItems",
+         "description": "QueueWorkItems",
+         "type": "ms.vss-work-web.work-item-form-control",
+         "targets": [
+            "ms.vss-work-web.work-item-form"
+         ],
+         "properties": {
+            "name": "Queue Control",
+            "uri": "index.html",
+            "height": 60,
+            "inputs": [
+               {
+                  "id": "RequestUrl",
+                  "name": "Request Url",
+                  "description": "Request Url",
+                  "type": "TextArea",
+                  "properties": {
+                     "workItemFieldTypes": [
+                        "Integer",
+                        "Double",
+                        "String"
+                     ]
+                  },
+                  "validation": {
+                     "dataType": "String",
+                     "isRequired": true
+                  }
+               },
+               {
+                  "id": "Parameters",
+                  "name": "Request Parameters",
+                  "description": "[Single] auth=1234 / [Multiple] auth=1234,name=balsa,location=vancouver",
+                  "type": "TextArea",
+                  "properties": {
+                     "workItemFieldTypes": [
+                        "String"
+                     ]
+                  },
+                  "validation": {
+                     "dataType": "String",
+                     "isRequired": false
+                  }
+               },
+               {
+                  "id": "ButtonsName",
+                  "name": "Buttons name",
+                  "description": "Default value is 'Queue WorkItem'",
+                  "type": "TextArea",
+                  "properties": {
+                     "workItemFieldTypes": [
+                        "Integer",
+                        "Double",
+                        "String"
+                     ]
+                  },
+                  "validation": {
+                     "dataType": "String",
+                     "isRequired": false
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

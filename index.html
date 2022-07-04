@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+   <head>
+      <meta charset="utf-8" />
+      <script src="lib/VSS.SDK.min.js"></script>
+
+      <link rel="stylesheet" href="styles/style.css" type="text/css" />
+
+   </head>
+
+   <body style="height:100%">
+
+   </body>
+   <script>
+      VSS.init({
+         explicitNotifyLoaded: true,
+         usePlatformScripts: true,
+         usePlatformStyles: true,
+         configureModuleLoader: true,
+         applyTheme: true
+      });
+
+      VSS.require(["build/app"], function ()
+      {
+         VSS.notifyLoadSucceeded();
+      });
+
+      VSS.resize();
+
+   </script>
+
+</html>

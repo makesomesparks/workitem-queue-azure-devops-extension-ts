@@ -1,0 +1,25 @@
+{
+   "compilerOptions": {
+      "allowJs": true,
+      "module": "amd",
+      "sourceMap": false,
+      "moduleResolution": "node",
+      "target": "es5",
+      "rootDir": "./scripts",
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "lib": [
+         "dom",
+         "es5",
+         "es2015"
+      ],
+      "outDir": "./build",
+      "resolveJsonModule": true,
+      "skipLibCheck": true
+   },
+   "exclude": [
+      "node_modules",
+      "build"
+   ]
+}

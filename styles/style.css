@@ -1,0 +1,35 @@
+.queue-workitem-buttons {
+	font-family: Arial;
+	font-weight: bold;
+	color: #363636;
+	font-size: 12px;
+	border-radius: 0px;
+	border: 1px #dcdcdc solid;
+	background-color: #ffffff;
+	text-shadow: 1px 1px 1px #ffffff;
+	box-shadow: inset 1px 1px 2px 0px #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+.queue-workitem-buttons:hover {
+	background-color: #f6f6f6;
+}
+
+.queue-workitem-buttons:active {
+   background-color: #f0f0f0;
+   color: #222;
+}
+
+.queue-workitem-buttons-icon {
+	padding: 7px 9px;
+	text-shadow: none;
+}
+.queue-workitem-buttons-icon svg {
+	vertical-align: middle;
+	position: relative;
+	left: 6px;
+}
+.queue-workitem-buttons-text {
+	padding: 7px 7px;
+}
