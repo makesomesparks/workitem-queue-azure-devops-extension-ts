@@ -43,7 +43,7 @@
    },
    "repository": {
       "type": "git",
-      "uri": "https://dev.azure.com/young-it/resources-management-automation/_git/devops-extension-queue-workitem"
+      "uri": "https://github.com/makesomesparks/workitem-queue-azure-devops-extension-ts"
    },
    "files": [
       {
